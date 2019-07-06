@@ -4,7 +4,7 @@ uno strumento per standardizzare e semplificare la gestione di un progetto angul
 
 # Creazione App:
 
-ng new --help // lista comandi di new
+*ng new --help // lista comandi di new*
 
 ng new my-app --d // genera la app in una cartella chiamata my-app, ma non salva
 
