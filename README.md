@@ -1,8 +1,8 @@
 # angulaCli
 
-* uno strumento per standardizzare e semplificare la gestione di un progetto angular. Si occupa di creare componenti, servizi, etc.. ma anche di preparare la app per il rilascio e eseguire i test
+uno strumento per standardizzare e semplificare la gestione di un progetto angular. Si occupa di creare componenti, servizi, etc.. ma anche di preparare la app per il rilascio e eseguire i test
 
-Creazione App:
+# Creazione App:
 
 ng new --help // lista comandi di new
 
@@ -12,10 +12,10 @@ i comandi ng si possono accorpare, per esempio:
 
 ng new my-app -st // genera la app con inline style (s) e inline template (t). Vale solo per le opzioni corte
 
-Linting
+# Linting
 ng lint --format stylish // lancia il lint e formatta l'output in modo che sia più leggibile
 
-Componenti:
+# Componenti:
 
 ng g c customer // crea il componente customer. Crea anche la cartella customer a partire da src/app. Il percorso si può specificare
 
@@ -35,15 +35,15 @@ ng g c customer // crea il componente customer. Crea anche la cartella customer 
 
 --prefix: prefisso per i componenti
 
-Direttive:
+# Direttive:
 
 ng g d search-box // crea una direttiva che mi sembra essere un componente fatto di solo codice
 
-Servizi:
+# Servizi:
 
 ng g s sales-data
 
-Classi:
+# Classi:
 
 ng g cl models/customer -d // genera una classe
 
@@ -51,13 +51,13 @@ ng g i models/person // genera un'interfaccia
 
 ng g e models/gender // genera un'enum
 
-Pipe:
+# Pipe:
 
 ng g p shared/init-caps // genera una pipe nella cartella shared
 
 ng g p shared/init-caps -m app.module // dice in che modulo mettere la pipe
 
-Moduli:
+# Moduli:
 
 ng g m login // crea un modulo
 
