@@ -6,18 +6,20 @@ uno strumento per standardizzare e semplificare la gestione di un progetto angul
 
 *ng new --help // lista comandi di new*
 
-ng new my-app --d // genera la app in una cartella chiamata my-app, ma non salva
+*ng new my-app --d // genera la app in una cartella chiamata my-app, ma non salva*
+
+*ng new my-app --routing // fa un modulo per i componenti e uno per il routing*
 
 i comandi ng si possono accorpare, per esempio:
 
-ng new my-app -st // genera la app con inline style (s) e inline template (t). Vale solo per le opzioni corte
+*ng new my-app -st // genera la app con inline style (s) e inline template (t). Vale solo per le opzioni corte*
 
 # Linting
-ng lint --format stylish // lancia il lint e formatta l'output in modo che sia più leggibile
+*ng lint --format stylish // lancia il lint e formatta l'output in modo che sia più leggibile*
 
 # Componenti:
 
-ng g c customer // crea il componente customer. Crea anche la cartella customer a partire da src/app. Il percorso si può specificare
+*ng g c customer // crea il componente customer. Crea anche la cartella customer a partire da src/app. Il percorso si può specificare*
 
 --flat: niente cartella per il file del componente
 
@@ -62,3 +64,5 @@ ng g p shared/init-caps -m app.module // dice in che modulo mettere la pipe
 ng g m login // crea un modulo
 
 ng g m login -m app.module // come sopra, ma importa anche il modulo appena creato nel modulo app.module
+
+un opzione interessante è --routing che crea due moduli: uno per i componenti e uno per il routing. Ricordarsi di usarla con -m e nome del modulo principale per importare il modulo
