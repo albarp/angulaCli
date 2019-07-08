@@ -66,3 +66,7 @@ ng g m login // crea un modulo
 ng g m login -m app.module // come sopra, ma importa anche il modulo appena creato nel modulo app.module
 
 un opzione interessante è --routing che crea due moduli: uno per i componenti e uno per il routing. Ricordarsi di usarla con -m e nome del modulo principale per importare il modulo
+
+# Guardie
+
+*ng g guard auth*
