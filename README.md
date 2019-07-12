@@ -88,4 +88,23 @@ i file che produce sono:
 
 e poi si usa un comando chiamato webpack-bundle-analyzer (da installare a parte) per analizzare il file:
 
-*npx webpack-bundle-analyzer dist/[your app]/stats.json
+*npx webpack-bundle-analyzer dist/[your app]/stats.json*
+
+# Serve
+*ng serve -o --prod* // è un'opzione per testare il sito come 
+
+# Capabilities
+*ng add <external library>* // aggiunge la external library al mio progetto
+  
+|Op|Description|
+|-|-|
+|ng add @angular/pwa|Progressive Web App|
+|ng add @angular/material|Material design|
+|ng add @angular/elements|Per utilizzare il componente angular come web component?|
+|ng add @ng-bootstrap/schematics|template per la generazione automatica di componenti ngbootstrap??|
+
+Una volta installate le nuove capabilities, e se sono disponibili gli schematics, si possono generare automaticamente le porzioni di codice:
+
+*ng g @angular/material:material-nav --name nav* // crea un componente di navigazione di nome nav
+*ng g @angular/material:material-dashboard --name dashboard* // una bella dashboard già pronta
+*ng g @angular/material:material-table --name customer-list* // una bellissima tabella di nome customer list
