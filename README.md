@@ -70,3 +70,22 @@ un opzione interessante è --routing che crea due moduli: uno per i componenti e
 # Guardie
 
 *ng g guard auth*
+
+# Build
+*ng build --help* // output to /dist/[your app]
+
+i file che produce sono:
+
+|File|Description|
+|---|---|
+|runtime.js|WebPack runtime|
+|main.js|App Code|
+|polyfills.js|Platform polifills|
+|style.s|Styles|
+|vendor.js|Angular and other vendro files|
+
+*ng build --stats-json* // mette nella cartella dist un file json con le statistiche dei pacchetti inclusi nel buil. Non usare in prod
+
+e poi si usa un comando chiamato webpack-bundle-analyzer (da installare a parte) per analizzare il file:
+
+*npx webpack-bundle-analyzer dist/[your app]/stats.json
