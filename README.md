@@ -144,6 +144,8 @@ Angular cerca la libreria prima nel file tsconfig e dopo nei node modules
 
 import { logger } from 'my-lib'
 
+E ricordarsi di importarla nel modulo che la usa
+
 ## Tips:
 * Fare sempre il build dopo aver modificato
 * tenere il file plublic_api.ts aggiornato (dice che servizi, componenti, etc.. sono esportati)
