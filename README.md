@@ -125,3 +125,21 @@ Angular.json contiene la definizione dei progetti.
 *ng generate application help-area* / crea il progetto help-area
 
 I comandi della cli possono essere indirizzati ad un progetto piuttosto che ad un altro
+
+# Libraries
+*ng g library my-lib*
+
+**Prima di poter usare un libreria, questa va compilata**
+
+*ng build my-lib --prod*
+
+Angular cerca la libreria prima nel file tsconfig e dopo nei node modules
+
+import { logger } from 'my-lib'
+
+## Tips:
+* Fare sempre il build dopo aver modificato
+* tenere il file plublic_api.ts aggiornato (dice che servizi, componenti, etc.. sono esportati)
+
+## Pubblicare
+Muoversi nella cartella dist e fare publish
