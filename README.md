@@ -108,3 +108,20 @@ Una volta installate le nuove capabilities, e se sono disponibili gli schematics
 *ng g @angular/material:material-nav --name nav* // crea un componente di navigazione di nome nav
 *ng g @angular/material:material-dashboard --name dashboard* // una bella dashboard già pronta
 *ng g @angular/material:material-table --name customer-list* // una bellissima tabella di nome customer list
+
+# Update
+Il sito di riferimento è https://update.angular.io
+
+*ng update* // lanciato senza parametri fa vedere quali pacchetti andrebbero aggiornati
+
+Ricordarsi dell'opzione -d per fare un dry run
+
+# Multiple peojects:
+E' possibile creare diversi sotto progetti, dopo aver fatto il progetto principale. I sotto progetti sono raccolti nella cartella *projects*. I sotto progetti, e il progetto principale, possono essere compilati separatamente e ognuno avrà la rispettiva cartella sotto *dist*
+Angular.json contiene la definizione dei progetti.
+
+*ng new home* // fa il progetto home
+
+*ng generate application help-area* / crea il progetto help-area
+
+I comandi della cli possono essere indirizzati ad un progetto piuttosto che ad un altro
