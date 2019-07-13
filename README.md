@@ -10,6 +10,8 @@ uno strumento per standardizzare e semplificare la gestione di un progetto angul
 
 *ng new my-app --routing // fa un modulo per i componenti e uno per il routing*
 
+*ng new my-app --directory ./* // crea i file nella directory corrente
+
 i comandi ng si possono accorpare, per esempio:
 
 *ng new my-app -st // genera la app con inline style (s) e inline template (t). Vale solo per le opzioni corte*
@@ -127,11 +129,16 @@ Angular.json contiene la definizione dei progetti.
 I comandi della cli possono essere indirizzati ad un progetto piuttosto che ad un altro
 
 # Libraries
-*ng g library my-lib*
 
-**Prima di poter usare un libreria, questa va compilata**
+*ng new foo-lib --create-application=false* // Prepara un workspace vuoto che può ospitare la libreria
 
-*ng build my-lib --prod*
+*ng g library foo-lib --prefix=foo*
+
+**Prima di poter usare un libreria, questa va compilata (l'opzione --prod dovrebbe essere il default)**
+
+*ng build foo-lib*
+
+*ng generate application foo-tester* // normalmente si vuole anche creare un applicazione di test
 
 Angular cerca la libreria prima nel file tsconfig e dopo nei node modules
 
