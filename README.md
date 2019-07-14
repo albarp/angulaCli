@@ -152,3 +152,10 @@ E ricordarsi di importarla nel modulo che la usa
 
 ## Pubblicare
 Muoversi nella cartella dist e fare publish
+
+# Test
+*ng test* // Karma esegue i file .spec. nel nostro progetto (o workspace?)
+
+*ng test --code-coverage* // produce una cartella "code coverage" con un pagina html sui dettagli del code coverage
+
+Il debug dei test is fa sempre con Chrome
